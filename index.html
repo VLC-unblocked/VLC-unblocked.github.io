@@ -3,11 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gaming GitHub Page</title>
-  <link rel="icon" type="image/png" href="https://user-images.githubusercontent.com/vanlodenstein/leerlingen/gaming-icon.png" />
+  <title>Van Lodenstein College Unblocked</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1f2739, #3a475e);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+
+    /* Header bar ("venster") with left image and text */
+    header {
+      width: 100%;
+      max-width: 1200px;
+      background-color: #252f44;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+    header img {
+      height: 50px;
+      width: 50px;
+      object-fit: contain;
+      border-radius: 6px;
+      margin-right: 15px;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      user-select: none;
+    }
+
+    /* Main container for the game cards */
+    main {
+      flex-grow: 1;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+
+    /* Single game card */
+    .game-card {
+      background: linear-gradient(145deg, #3a475e, #2a3549);
+      border-radius: 15px;
+      box-shadow:
+        inset 2px 2px 5px rgba(255,255,255,0.1),
+        5px 5px 15px rgba(0,0,0,0.6);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        4px 8px 20px rgba(0,0,0,0.7),
+        inset 3px 3px 7px rgba(255,255,255,0.15);
+    }
+
+    /* Game thumbnail placeholder */
+    .game-thumb {
+      background: #20283d;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7894d4;
+      font-size: 3rem;
+      user-select: none;
+      border-bottom: 2px solid #4060e7;
+    }
+
+    /* Game info area */
+    .game-info {
+      padding: 15px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .game-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-align: center;
+      color: #4060e7;
+      user-select: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Footer - can be placeholder or empty */
+    footer {
+      margin-top: 50px;
+      color: #7894d4aa;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welkom bij vanlodenstein/leerlingen</h1>
-  <p>Gaming GitHub pagina</p>
+  <header>
+    <!-- Replace src with the actual image you send -->
+    <img src="YOUR_IMAGE_URL_HERE" alt="Logo van Lodenstein" />
+    <h1>vanlodenstein/leerlingen</h1>
+  </header>
+
+  <main>
+    <!-- Game 1 -->
+    <div class="game-card" tabindex="0" aria-label="Game 1">
+      <div class="game-thumb" aria-hidden="true">🎮</div>
+      <div class="game-info">
+        <div class="game-title">Game 1</div>
+      </div>
+    </div>
+
+    <!-- Game 2 -->
+    <div class="game-card" tabindex="0" aria-label="Game 2">
+      <div class="game-thumb" aria-hidden="true">🎯</div>
+      <div class="game-info">
+        <div class="game-title">Game 2</div>
+      </div>
+    </div>
+
+    <!-- Game 3 -->
+    <div class="game-card" tabindex="0" aria-label="Game 3">
+      <div class="game-thumb" aria-hidden="true">🚀</div>
+      <div class="game-info">
+        <div class="game-title">Game 3</div>
+      </div>
+    </div>
+
+    <!-- Game 4 -->
+    <div class="game-card" tabindex="0" aria-label="Game 4">
+      <div class="game-thumb" aria-hidden="true">🏹</div>
+      <div class="game-info">
+        <div class="game-title">Game 4</div>
+      </div>
+    </div>
+
+    <!-- Game 5 -->
+    <div class="game-card" tabindex="0" aria-label="Game 5">
+      <div class="game-thumb" aria-hidden="true">🕹️</div>
+      <div class="game-info">
+        <div class="game-title">Game 5</div>
+      </div>
+    </div>
+
+    <!-- Game 6 -->
+    <div class="game-card" tabindex="0" aria-label="Game 6">
+      <div class="game-thumb" aria-hidden="true">🎲</div>
+      <div class="game-info">
+        <div class="game-title">Game 6</div>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+
 </body>
 </html>
