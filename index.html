@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>vanlodenstein/leerlingen</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAARVBMVEVHcEwYpaQAp9EMpr0Ap9EAp9EAp9EAp9EAp9E/oTk/oTk/oTkAp9EAp9NAoTM/oTk/oTk/oTkAp9E/oTkAp9EAp9EAp9G0Z/kyAAAAF3RSTlMAC/8YN2a6lIQrd73SU1To/88mqqTvd5n70ZQAAACrSURBVHgB1M7FYQQxEADBVi8zSco/U9MxBeD6DQ//WNCCT0rlo8qatwobGlsAun4YXoqjEzAv67pup2Rz6t5t0QKGdV36LpyTAjBZFQrHuvZcnd+P7pMJHmqM5lMPrSPdunYP/ycgWxMdYV0P7mjLriXRBMfvP/Pcn1uy1lpDowG29eR61b/0pBGY/8pLwUmb6gCQtJ6mCULgxa5q+h6uOBMByeKJU8bBm94AHnsGSv9fkikAAAAASUVORK5CYII=" />
+  <link rel="icon" type="image/png" href="YOUR_IMAGE_URL_HERE" />
   <style>
     /* Reset and base */
     * {
@@ -91,17 +91,13 @@
         inset 3px 3px 7px rgba(255,255,255,0.15);
     }
 
-    /* Game thumbnail placeholder */
-    .game-thumb {
-      background: #20283d;
+    /* iframe game styling inside game card */
+    .game-iframe {
+      width: 100%;
       height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #7894d4;
-      font-size: 3rem;
-      user-select: none;
-      border-bottom: 2px solid #4060e7;
+      border: none;
+      border-radius: 15px 15px 0 0;
+      background: #20283d;
     }
 
     /* Game info area */
@@ -141,49 +137,79 @@
   <div class="page-title">Van Lodenstein College Unblocked</div>
 
   <main>
-    <!-- Game 1 -->
+    <!-- Game 1 lokaal inladen: spel bestaat uit index.html in folder games/game1/ -->
     <div class="game-card" tabindex="0" aria-label="Game 1">
-      <div class="game-thumb" aria-hidden="true">🎮</div>
+      <iframe
+        class="game-iframe"
+        src="./games/game1/index.html"
+        title="Game 1"
+        allowfullscreen
+      ></iframe>
       <div class="game-info">
         <div class="game-title">Game 1</div>
       </div>
     </div>
 
-    <!-- Game 2 -->
+    <!-- Game 2 lokaal inladen -->
     <div class="game-card" tabindex="0" aria-label="Game 2">
-      <div class="game-thumb" aria-hidden="true">🎯</div>
+      <iframe
+        class="game-iframe"
+        src="./games/game2/index.html"
+        title="Game 2"
+        allowfullscreen
+      ></iframe>
       <div class="game-info">
         <div class="game-title">Game 2</div>
       </div>
     </div>
 
-    <!-- Game 3 -->
+    <!-- Game 3 lokaal inladen -->
     <div class="game-card" tabindex="0" aria-label="Game 3">
-      <div class="game-thumb" aria-hidden="true">🚀</div>
+      <iframe
+        class="game-iframe"
+        src="./games/game3/index.html"
+        title="Game 3"
+        allowfullscreen
+      ></iframe>
       <div class="game-info">
         <div class="game-title">Game 3</div>
       </div>
     </div>
 
-    <!-- Game 4 -->
+    <!-- Game 4 lokaal inladen -->
     <div class="game-card" tabindex="0" aria-label="Game 4">
-      <div class="game-thumb" aria-hidden="true">🏹</div>
+      <iframe
+        class="game-iframe"
+        src="./games/game4/index.html"
+        title="Game 4"
+        allowfullscreen
+      ></iframe>
       <div class="game-info">
         <div class="game-title">Game 4</div>
       </div>
     </div>
 
-    <!-- Game 5 -->
+    <!-- Game 5 lokaal inladen -->
     <div class="game-card" tabindex="0" aria-label="Game 5">
-      <div class="game-thumb" aria-hidden="true">🕹️</div>
+      <iframe
+        class="game-iframe"
+        src="./games/game5/index.html"
+        title="Game 5"
+        allowfullscreen
+      ></iframe>
       <div class="game-info">
         <div class="game-title">Game 5</div>
       </div>
     </div>
 
-    <!-- Game 6 -->
+    <!-- Game 6 lokaal inladen -->
     <div class="game-card" tabindex="0" aria-label="Game 6">
-      <div class="game-thumb" aria-hidden="true">🎲</div>
+      <iframe
+        class="game-iframe"
+        src="./games/game6/index.html"
+        title="Game 6"
+        allowfullscreen
+      ></iframe>
       <div class="game-info">
         <div class="game-title">Game 6</div>
       </div>
