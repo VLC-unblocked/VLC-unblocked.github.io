@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>vanlodenstein/leerlingen</title>
-  <link rel="icon" type="image/png" href="YOUR_IMAGE_URL_HERE" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAARVBMVEVHcEwYpaQAp9EMpr0Ap9EAp9EAp9EAp9EAp9E/oTk/oTk/oTkAp9EAp9NAoTM/oTk/oTk/oTkAp9E/oTkAp9EAp9EAp9G0Z/kyAAAAF3RSTlMAC/8YN2a6lIQrd73SU1To/88mqqTvd5n70ZQAAACrSURBVHgB1M7FYQQxEADBVi8zSco/U9MxBeD6DQ//WNCCT0rlo8qatwobGlsAun4YXoqjEzAv67pup2Rz6t5t0QKGdV36LpyTAjBZFQrHuvZcnd+P7pMJHmqM5lMPrSPdunYP/ycgWxMdYV0P7mjLriXRBMfvP/Pcn1uy1lpDowG29eR61b/0pBGY/8pLwUmb6gCQtJ6mCULgxa5q+h6uOBMByeKJU8bBm94AHnsGSv9fkikAAAAASUVORK5CYII=" />
   <style>
     /* Reset and base */
     * {
@@ -23,44 +23,41 @@
       padding-bottom: 40px;
     }
 
-    /* Top text bar with website title "Van Lodenstein College Unblocked" */
-    .site-title-bar {
-      width: 100%;
-      max-width: 1200px;
-      background-color: #252f44;
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-      user-select: none;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #fff;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      border-radius: 12px;
-    }
-
-    /* Header bar with image only */
+    /* Header (top bar) with logo image + text next to it */
     header {
       width: 100%;
       max-width: 1200px;
+      background-color: #252f44;
       height: 70px;
       display: flex;
       align-items: center;
       padding: 0 20px;
-      margin-top: 30px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.5);
       border-radius: 12px;
-      background-color: #252f44;
+      margin-top: 20px;
+      user-select: none;
     }
     header img {
       height: 50px;
       width: 50px;
       object-fit: contain;
       border-radius: 6px;
-      margin-left: auto;
+      margin-right: 15px;
+    }
+    header .site-text {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    /* Main text below header */
+    .page-title {
+      margin: 25px 0 40px;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #4060e7;
+      user-select: none;
     }
 
     /* Main container for the game cards */
@@ -68,11 +65,10 @@
       flex-grow: 1;
       width: 100%;
       max-width: 1200px;
-      margin-top: 40px;
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
       gap: 25px;
-      padding: 0 20px;
+      padding: 0 20px 40px;
     }
 
     /* Single game card */
@@ -137,13 +133,12 @@
   </style>
 </head>
 <body>
-  <div class="site-title-bar">
-    Van Lodenstein College Unblocked
-  </div>
-
   <header>
     <img src="YOUR_IMAGE_URL_HERE" alt="Logo van Lodenstein" />
+    <div class="site-text">vanlodenstein/leerlingen</div>
   </header>
+
+  <div class="page-title">Van Lodenstein College Unblocked</div>
 
   <main>
     <!-- Game 1 -->
