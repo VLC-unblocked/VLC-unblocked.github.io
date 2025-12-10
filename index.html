@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Van Lodenstein College Unblocked</title>
+  <title>vanlodenstein/leerlingen</title>
+  <link rel="icon" type="image/png" href="YOUR_IMAGE_URL_HERE" />
   <style>
     /* Reset and base */
     * {
@@ -22,29 +23,44 @@
       padding-bottom: 40px;
     }
 
-    /* Header bar ("venster") with left image and text */
-    header {
+    /* Top text bar with website title "Van Lodenstein College Unblocked" */
+    .site-title-bar {
       width: 100%;
       max-width: 1200px;
       background-color: #252f44;
       height: 70px;
       display: flex;
       align-items: center;
-      padding: 0 20px;
+      justify-content: center;
       box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+      user-select: none;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    /* Header bar with image only */
+    header {
+      width: 100%;
+      max-width: 1200px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      margin-top: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+      border-radius: 12px;
+      background-color: #252f44;
     }
     header img {
       height: 50px;
       width: 50px;
       object-fit: contain;
       border-radius: 6px;
-      margin-right: 15px;
-    }
-    header h1 {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #fff;
-      user-select: none;
+      margin-left: auto;
     }
 
     /* Main container for the game cards */
@@ -52,7 +68,7 @@
       flex-grow: 1;
       width: 100%;
       max-width: 1200px;
-      margin-top: 30px;
+      margin-top: 40px;
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
       gap: 25px;
@@ -121,10 +137,12 @@
   </style>
 </head>
 <body>
+  <div class="site-title-bar">
+    Van Lodenstein College Unblocked
+  </div>
+
   <header>
-    <!-- Replace src with the actual image you send -->
     <img src="YOUR_IMAGE_URL_HERE" alt="Logo van Lodenstein" />
-    <h1>vanlodenstein/leerlingen</h1>
   </header>
 
   <main>
@@ -178,6 +196,5 @@
   </main>
 
   <footer></footer>
-
 </body>
 </html>
